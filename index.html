@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lokesh Jindal – Staff Software Engineer</title>
+<meta name="description" content="Lokesh Jindal is a staff software engineer building traffic and service infrastructure at LinkedIn.">
+<meta property="og:title" content="Lokesh Jindal – Staff Software Engineer">
+<meta property="og:description" content="Staff software engineer building traffic and service infrastructure at LinkedIn.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef1f4;
+    --surface: #ffffff;
+    --ink: #17202e;
+    --muted: #55606f;
+    --line: #cfd6de;
+    --accent: #0b6b63;
+    --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12171f;
+      --surface: #1a212c;
+      --ink: #e7ebf0;
+      --muted: #9aa5b3;
+      --line: #2c3644;
+      --accent: #5fd0c4;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--text);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .page {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 15rem minmax(0, 1fr);
+    gap: 4rem;
+  }
+  @media (max-width: 760px) {
+    .page { grid-template-columns: 1fr; gap: 2rem; padding-top: 2rem; }
+  }
+
+  /* Left rail: identity and links */
+  .rail { align-self: start; position: sticky; top: 3rem; }
+  @media (max-width: 760px) { .rail { position: static; } }
+  .rail h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.6rem;
+  }
+  .rail .role { margin: 0 0 1.5rem; color: var(--muted); }
+  .rail ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+  .rail a { font-family: var(--display); font-weight: 500; font-size: 0.98rem; }
+
+  /* Main column */
+  main > section { padding-bottom: 2.75rem; }
+  main > section + section { border-top: 1px solid var(--line); padding-top: 2.25rem; }
+  h2 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.1rem;
+  }
+  h3 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  p { margin: 0 0 1rem; max-width: 38rem; }
+  .lede { font-size: 1.25rem; line-height: 1.55; }
+
+  .job { margin-bottom: 1.9rem; }
+  .job:last-child { margin-bottom: 0; }
+  .job .meta { color: var(--muted); font-size: 0.95rem; margin: 0.1rem 0 0.6rem; }
+  .job ul { margin: 0; padding-left: 1.15rem; max-width: 38rem; }
+  .job li { margin-bottom: 0.35rem; }
+
+  .project { margin-bottom: 1.6rem; }
+  .project:last-child { margin-bottom: 0; }
+  .project p { margin: 0.2rem 0 0; }
+
+  .skills { max-width: 38rem; }
+  .skills dt { font-family: var(--display); font-weight: 500; margin-top: 0.75rem; }
+  .skills dd { margin: 0; color: var(--muted); }
+
+  footer { color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="rail">
+    <h1>Lokesh Jindal</h1>
+    <p class="role">Staff Software Engineer</p>
+    <nav aria-label="Profile links">
+      <ul>
+        <li><a href="mailto:lokeshjindal15@gmail.com">Email</a></li>
+        <li><a href="https://github.com/15ljindal">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/lokeshjindal15">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <p class="lede">I am a software engineer at LinkedIn with over 7 years of experience in distributed systems and service infrastructure.</p>
+      <p>I am part of the traffic team, building highly available, scalable and secure services that serve as the front door for all of LinkedIn. My work focuses on low-latency microservices, smart load balancing, rate limiting, and foundational gateway features for systems processing over 2 million requests per second.</p>
+      <p>Beyond technical delivery, I bring cross-functional collaboration, strong communication, a passion for learning new technologies, and a commitment to building a positive team culture.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <h3>LinkedIn, Distributed Systems</h3>
+        <p class="meta">October 2019 to present. Staff Software Engineer, previously Senior Software Engineer and Software Engineer.</p>
+        <ul>
+          <li>Led the prototyping, design and launch of core authentication and cookie and session management primitives that secure linkedin.com traffic for millions of users.</li>
+          <li>Built data-plane and control-plane components for the next-generation HAProxy-based traffic gateway, delivering 5x higher throughput, modern protocol support and better resilience.</li>
+          <li>Added custom features to HAProxy and contributed back to the open-source project.</li>
+          <li>Unified the Kubernetes platform with core networking infrastructure to standardize deployment of 50+ microservices, and drove the service discovery design for migrating tens of microservices to Kubernetes.</li>
+          <li>Optimized the reverse proxy, saving 35% CPU and $4M annually.</li>
+          <li>Built a rate-limiting solution that protects a tier-0 microservice from hot keys, eliminating quarterly outages.</li>
+          <li>Engineered smart request routing for microservices, improving latency by 300 ms.</li>
+          <li>Upgraded the Apache Traffic Server reverse proxy to the latest version with zero downtime, cutting CPU use by 12% and memory use by 40%.</li>
+          <li>Partnered with global teams on design reviews, code reviews, outage mitigation, debugging guides, telemetry and safe rollouts.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>NVIDIA, Santa Clara</h3>
+        <p class="meta">July 2016 to August 2019. Software Engineer.</p>
+        <ul>
+          <li>Built scalable, configurable simulation software that defined the architecture of next-generation GPUs.</li>
+          <li>Developed a performance evaluation framework to find design bugs and protect high bandwidth and low latency.</li>
+          <li>Wrote software cache models that drove performance projections for the next generation of SPARC systems, and proposed an L3 replacement policy projected to improve system performance by up to 2%.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="open-source">
+      <h2>Open source</h2>
+
+      <article class="project">
+        <h3>HAProxy</h3>
+        <p>Custom features built for LinkedIn's traffic gateway and contributed back to the project.</p>
+      </article>
+
+      <article class="project">
+        <h3>Apache Traffic Server</h3>
+        <p>Contributed a plugin reload feature that preserves backward compatibility, which cut upgrade time by months.</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd>Java, Python, Go, C++, C, concurrent programming</dd>
+        <dt>Traffic infrastructure</dt>
+        <dd>HAProxy, Apache Traffic Server, Envoy, load balancing, data-center failover, authentication, anti-abuse, HTTP(S), gRPC, DNS, zero trust, performance optimization</dd>
+        <dt>Distributed systems</dt>
+        <dd>Microservices, service mesh, control planes, sidecars, Kubernetes, Kafka, ZooKeeper, Couchbase, Espresso DB, APIs</dd>
+      </dl>
+    </section>
+
+    <section id="publications">
+      <h2>Publication</h2>
+      <p>Mohammad Alian, Ahmed Abulila, Lokesh Jindal, Dahoon Kim and Nam Sung Kim. <em>NCAP: Network-driven, packet context-aware power management for client-server architecture.</em> IEEE International Symposium on High-Performance Computer Architecture, February 2017.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>MS in Computer Sciences, University of Wisconsin-Madison.<br>BE in Electrical and Electronics, BITS Pilani, India.</p>
+    </section>
+
+    <footer>
+      <p>Last updated October 2026.</p>
+    </footer>
+  </main>
+
+</div>
+</body>
+</html>
