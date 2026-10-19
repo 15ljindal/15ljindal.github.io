@@ -1,0 +1,8 @@
+title: Lokesh Jindal
+description: Staff software engineer building traffic and service infrastructure at LinkedIn.
+lang: en
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
