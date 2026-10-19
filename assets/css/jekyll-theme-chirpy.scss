@@ -90,3 +90,8 @@
 :root[data-mode='light'] {
   @include solarized-light;
 }
+
+/* Contact links are listed as text under Home, aligned with the nav labels */
+#sidebar a.nav-link.contact-link span {
+  margin-left: 2.7rem;
+}

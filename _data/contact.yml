@@ -1,12 +1,15 @@
 #  The contact options.
 
 - type: github
+  label: GitHub
   icon: "fab fa-github"
 
 - type: email
+  label: Email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
 - type: linkedin
+  label: LinkedIn
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/lokeshjindal15"
