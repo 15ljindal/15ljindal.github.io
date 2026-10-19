@@ -1,0 +1,66 @@
+name: Lokesh Jindal
+role: Staff Software Engineer
+links:
+  - label: Email
+    url: mailto:lokeshjindal15@gmail.com
+  - label: GitHub
+    url: https://github.com/15ljindal
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/lokeshjindal15
+
+about:
+  - I am a software engineer at LinkedIn with over 7 years of experience in distributed systems and service infrastructure.
+  - I am part of the traffic team, building highly available, scalable and secure services that serve as the front door for all of LinkedIn. My work focuses on low-latency microservices, smart load balancing, rate limiting, and foundational gateway features for systems processing over 2 million requests per second.
+  - Beyond technical delivery, I bring cross-functional collaboration, strong communication, a passion for learning new technologies, and a commitment to building a positive team culture.
+
+experience:
+  - company: LinkedIn
+    team: Distributed Systems
+    dates: October 2019 to present
+    title: Staff Software Engineer, previously Senior Software Engineer and Software Engineer
+    bullets:
+      - Led the prototyping, design and launch of core authentication and cookie and session management primitives that secure linkedin.com traffic for millions of users.
+      - Built data-plane and control-plane components for the next-generation HAProxy-based traffic gateway, delivering 5x higher throughput, modern protocol support and better resilience.
+      - Added custom features to HAProxy and contributed back to the open-source project.
+      - Unified the Kubernetes platform with core networking infrastructure to standardize deployment of 50+ microservices, and drove the service discovery design for migrating tens of microservices to Kubernetes.
+      - Optimized the reverse proxy, saving 35% CPU and $4M annually.
+      - Built a rate-limiting solution that protects a tier-0 microservice from hot keys, eliminating quarterly outages.
+      - Engineered smart request routing for microservices, improving latency by 300 ms.
+      - Upgraded the Apache Traffic Server reverse proxy to the latest version with zero downtime, cutting CPU use by 12% and memory use by 40%.
+      - Partnered with global teams on design reviews, code reviews, outage mitigation, debugging guides, telemetry and safe rollouts.
+  - company: NVIDIA
+    team: Santa Clara
+    dates: November 2017 to August 2019
+    title: Software Engineer
+    bullets:
+      - Built scalable, configurable simulation software that defined the architecture of next-generation GPUs.
+      - Developed a performance evaluation framework to find design bugs and protect high bandwidth and low latency.
+  - company: Oracle
+    team: Santa Clara
+    dates: July 2016 to October 2017
+    title: Software Engineer
+    bullets:
+      - Developed software cache models that drove performance projections for the next generation of SPARC systems.
+      - Proposed an L3 cache replacement policy projected to improve system performance by up to 2%.
+
+open_source:
+  - name: HAProxy
+    text: Custom features built for LinkedIn's traffic gateway and contributed back to the project.
+  - name: Apache Traffic Server
+    text: Contributed a plugin reload feature that preserves backward compatibility, which cut upgrade time by months.
+
+skills:
+  - label: Languages
+    items: Java, Python, Go, C++, C, concurrent programming
+  - label: Traffic infrastructure
+    items: HAProxy, Apache Traffic Server, Envoy, load balancing, data-center failover, authentication, anti-abuse, HTTP(S), gRPC, DNS, zero trust, performance optimization
+  - label: Distributed systems
+    items: Microservices, service mesh, control planes, sidecars, Kubernetes, Kafka, ZooKeeper, Couchbase, Espresso DB, APIs
+
+publication: "Mohammad Alian, Ahmed Abulila, Lokesh Jindal, Dahoon Kim and Nam Sung Kim. *NCAP: Network-driven, packet context-aware power management for client-server architecture.* IEEE International Symposium on High-Performance Computer Architecture, February 2017."
+
+education:
+  - MS in Computer Sciences, University of Wisconsin-Madison
+  - BE in Electrical and Electronics, BITS Pilani, India
+
+updated: October 2026
