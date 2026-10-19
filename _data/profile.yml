@@ -64,3 +64,19 @@ education:
   - BE in Electrical and Electronics, BITS Pilani, India
 
 updated: October 2026
+
+# Technologies shown in bold wherever they appear in experience and open-source text.
+# Exact, case-sensitive matches; avoid entries that overlap or sit inside another entry.
+highlights:
+  - Apache Traffic Server
+  - HAProxy
+  - Kubernetes
+  - open-source
+  - rate-limiting
+  - rate limiting
+  - load balancing
+  - microservices
+  - service discovery
+  - authentication
+  - zero downtime
+  - 2 million requests per second

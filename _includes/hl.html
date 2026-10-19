@@ -1,0 +1,6 @@
+{%- assign t = include.text | escape -%}
+{%- for k in site.data.profile.highlights -%}
+  {%- assign m = '<mark>' | append: k | append: '</mark>' -%}
+  {%- assign t = t | replace: k, m -%}
+{%- endfor -%}
+{{- t -}}

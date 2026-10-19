@@ -95,3 +95,32 @@
 #sidebar a.nav-link.contact-link span {
   margin-left: 2.7rem;
 }
+
+/* Highlights (Solarized accents) */
+.hl-company {
+  color: #268bd2;
+  font-weight: 700;
+}
+
+.hl-date {
+  color: #cb4b16;
+  font-weight: 600;
+}
+
+.job-meta {
+  margin-top: -0.25rem;
+}
+
+#core-wrapper mark,
+.content mark {
+  background: none;
+  color: #000;
+  padding: 0;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.content p.intro {
+  color: #000;
+}

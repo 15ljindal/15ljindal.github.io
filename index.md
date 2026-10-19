@@ -5,18 +5,19 @@ title: Lokesh Jindal
 {% assign p = site.data.profile %}
 
 {% for para in p.about %}
-<p>{{ para | escape }}</p>
+{% capture intro %}{% include hl.html text=para %}{% endcapture %}
+<p class="intro">{{ intro | replace: 'LinkedIn', '<span class="hl-company">LinkedIn</span>' }}</p>
 {% endfor %}
 
 ## Experience
 
 {% for job in p.experience %}
-### {{ job.company }}, {{ job.team }}
+### <span class="hl-company">{{ job.company }}</span>, {{ job.team }}
 
-*{{ job.dates }}. {{ job.title }}.*
+<p class="job-meta"><span class="hl-date">{{ job.dates }}</span>. <em>{{ job.title }}.</em></p>
 
 <ul>
-  {% for b in job.bullets %}<li>{{ b | escape }}</li>
+  {% for b in job.bullets %}<li>{% include hl.html text=b %}</li>
   {% endfor %}
 </ul>
 {% endfor %}
@@ -24,7 +25,7 @@ title: Lokesh Jindal
 ## Open source
 
 {% for o in p.open_source %}
-**{{ o.name }}.** {{ o.text | escape }}
+<p><span class="hl-company">{{ o.name }}</span>. {% include hl.html text=o.text %}</p>
 
 {% endfor %}
 
