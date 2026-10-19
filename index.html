@@ -1,80 +1,51 @@
 ---
-layout: default
+layout: page
+title: Lokesh Jindal
 ---
 {% assign p = site.data.profile %}
-<header class="masthead">
-  <h1>{{ p.name }}</h1>
-  <p class="role">{{ p.role }}</p>
-  <nav aria-label="Profile links">
-    {% for link in p.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
-  </nav>
-</header>
 
-<main>
-  <section class="block about">
-    <div class="body">
-      {% for para in p.about %}
-      <p{% if forloop.first %} class="lede"{% endif %}>{{ para | escape }}</p>
-      {% endfor %}
-    </div>
-  </section>
+{% for para in p.about %}
+<p>{{ para | escape }}</p>
+{% endfor %}
 
-  <section class="block" id="experience">
-    <h2>Experience</h2>
-    <div class="body">
-      {% for job in p.experience %}
-      <article class="entry">
-        <h3>{{ job.company }}, {{ job.team }}</h3>
-        <p class="meta">{{ job.dates }}. {{ job.title }}.</p>
-        <ul>
-          {% for b in job.bullets %}<li>{{ b | escape }}</li>
-          {% endfor %}
-        </ul>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
+## Experience
 
-  <section class="block" id="open-source">
-    <h2>Open source</h2>
-    <div class="body">
-      {% for o in p.open_source %}
-      <article class="entry">
-        <h3>{{ o.name }}</h3>
-        <p>{{ o.text | escape }}</p>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
+{% for job in p.experience %}
+### {{ job.company }}, {{ job.team }}
 
-  <section class="block" id="skills">
-    <h2>Skills</h2>
-    <div class="body">
-      <dl>
-        {% for s in p.skills %}
-        <dt>{{ s.label }}</dt>
-        <dd>{{ s.items | escape }}</dd>
-        {% endfor %}
-      </dl>
-    </div>
-  </section>
+*{{ job.dates }}. {{ job.title }}.*
 
-  <section class="block" id="publication">
-    <h2>Publication</h2>
-    <div class="body">
-      {{ p.publication | markdownify }}
-    </div>
-  </section>
+<ul>
+  {% for b in job.bullets %}<li>{{ b | escape }}</li>
+  {% endfor %}
+</ul>
+{% endfor %}
 
-  <section class="block" id="education">
-    <h2>Education</h2>
-    <div class="body">
-      {% for e in p.education %}<p>{{ e | escape }}.</p>
-      {% endfor %}
-    </div>
-  </section>
-</main>
+## Open source
 
-<footer>
-  <p>Last updated {{ p.updated }}.</p>
-</footer>
+{% for o in p.open_source %}
+**{{ o.name }}.** {{ o.text | escape }}
+
+{% endfor %}
+
+## Skills
+
+<dl>
+  {% for s in p.skills %}
+  <dt>{{ s.label }}</dt>
+  <dd>{{ s.items | escape }}</dd>
+  {% endfor %}
+</dl>
+
+## Publication
+
+{{ p.publication | markdownify }}
+
+## Education
+
+<ul>
+  {% for e in p.education %}<li>{{ e | escape }}</li>
+  {% endfor %}
+</ul>
+
+*Last updated {{ p.updated }}.*
