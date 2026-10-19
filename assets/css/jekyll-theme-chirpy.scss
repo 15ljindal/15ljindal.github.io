@@ -1,0 +1,82 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Solarized Light palette (https://ethanschoonover.com/solarized/) */
+:root[data-mode='light'] {
+  --main-bg: #fdf6e3;
+  --mask-bg: #eee8d5;
+  --main-border-color: #eee8d5;
+
+  --text-color: #586e75;
+  --text-muted-color: #93a1a1;
+  --heading-color: #073642;
+  --label-color: #657b83;
+  --blockquote-border-color: #eee8d5;
+  --blockquote-text-color: #657b83;
+  --link-color: #268bd2;
+  --link-underline-color: #eee8d5;
+  --button-bg: #fdf6e3;
+  --btn-border-color: #eee8d5;
+  --btn-backtotop-color: #657b83;
+  --btn-backtotop-border-color: #eee8d5;
+  --checkbox-checked-color: #268bd2;
+  --img-bg: radial-gradient(circle, #fdf6e3 0%, #eee8d5 100%);
+  --menu-bg: #fdf6e3;
+  --menu-border-color: #eee8d5;
+  --menu-active-color: #586e75;
+  --menu-highlight-bg: rgb(238 232 213 / 50%);
+
+  --site-title-color: #657b83;
+  --site-subtitle-color: #93a1a1;
+  --sidebar-bg: #eee8d5;
+  --sidebar-border-color: #e4ddc8;
+  --sidebar-muted-color: #657b83;
+  --sidebar-active-color: #073642;
+  --sidebar-hover-bg: rgb(147 161 161 / 20%);
+  --sidebar-btn-bg: #fdf6e3;
+  --sidebar-btn-color: #93a1a1;
+  --avatar-border-color: #fdf6e3;
+
+  --topbar-bg: rgb(253 246 227 / 80%);
+  --topbar-text-color: #657b83;
+  --search-border-color: #eee8d5;
+  --search-icon-color: #93a1a1;
+  --input-focus-border-color: #93a1a1;
+
+  --post-list-text-color: #657b83;
+  --btn-patinator-text-color: #657b83;
+  --toc-highlight: #268bd2;
+  --btn-share-color: #93a1a1;
+  --btn-share-hover-color: #268bd2;
+  --card-bg: #fdf6e3;
+  --card-hover-bg: #eee8d5;
+  --tb-odd-bg: #f7f0db;
+  --tb-border-color: #eee8d5;
+  --dash-color: #93a1a1;
+  --kbd-bg-color: #fdf6e3;
+
+  --tag-border: #e4ddc8;
+  --tag-hover: #eee8d5;
+  --search-tag-bg: #f7f0db;
+  --timeline-color: rgb(88 110 117 / 12%);
+  --timeline-node-bg: #93a1a1;
+  --timeline-year-dot-color: #fdf6e3;
+
+  --highlight-bg-color: #eee8d5;
+  --language-border-color: #e4ddc8;
+  --inline-code-bg: rgb(7 54 66 / 7%);
+  --code-color: #586e75;
+}
